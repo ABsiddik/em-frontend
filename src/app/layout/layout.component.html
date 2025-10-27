@@ -1,0 +1,10 @@
+<div class="d-flex" id="app-root">
+    <app-sidebar class="border-end"></app-sidebar>
+    <div class="flex-grow-1">
+        <app-header></app-header>
+        <main class="p-4" style="min-height: calc(100vh - 120px); margin-left: 240px;">
+            <router-outlet></router-outlet>
+        </main>
+        <app-footer></app-footer>
+    </div>
+</div>
