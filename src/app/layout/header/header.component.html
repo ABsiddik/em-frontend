@@ -3,8 +3,21 @@
     <span class="navbar-brand mb-0 h5">EM Portal</span>
 
     <div class="d-flex align-items-center">
-      <div class="me-3">Welcome, Admin</div>
-      <button class="btn btn-outline-secondary btn-sm" (click)="logout()">Logout</button>
+      <!-- <div class="me-3">Welcome, Admin</div> -->
+      <!-- <button class="btn btn-outline-secondary btn-sm" (click)="logout()">Logout</button> -->
+       <div class="flex-shrink-0 dropdown">
+          <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle"
+            id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end text-small shadow" aria-labelledby="dropdownUser2" >
+            <li><a class="dropdown-item" href="#">New project...</a></li>
+            <li><a class="dropdown-item" href="#">Settings</a></li>
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#" (click)="logout()">Sign out</a></li>
+          </ul>
+        </div>
     </div>
   </div>
 </nav>
