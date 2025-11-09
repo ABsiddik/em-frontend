@@ -1,0 +1,28 @@
+<div class="container-fluid">
+  <h3>Employees</h3>
+  
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>Designation</th>
+        <th>Department</th>
+        <th>Type</th>
+        <th>Joining Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let emp of employees; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ emp.name }}</td>
+        <td>{{ emp.phone }}</td>
+        <td>{{ emp.designation }}</td>
+        <td>{{ emp.department }}</td>
+        <td>{{ emp.type }}</td>
+        <td>{{ emp.joiningDate }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
